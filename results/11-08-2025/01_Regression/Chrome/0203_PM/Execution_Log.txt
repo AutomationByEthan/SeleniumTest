@@ -1,0 +1,10 @@
+============================== [ 01_Regression ] ==============================
+Purpose: Basic Regression on Dummy Site
+Start: 11/08/2025 02:03 PM
+
+STARTED: https://AutomationByEthan.github.io/Website-Regression/
+Opened: https://AutomationByEthan.github.io/Website-Regression/
+	- Validation 01: Webpage appears with correct title
+	- Screenshot: Homepage.jpg
+
+============================== [ END ] ==============================
