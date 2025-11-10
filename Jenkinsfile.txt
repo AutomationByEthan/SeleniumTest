@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    stages {
+        stage('UI Automation - Todoist Login/Logout') {
+            steps {
+                bat '''
+                cd "C:\\Users\\Elgin\\Katalon Studio\\todoist\\SeleniumTest"
+                mvn clean package
+                java -jar target\\SeleniumTest-1.0-SNAPSHOT-jar-with-dependencies.jar
+                '''
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: '**/Katalon/DemoScripts/**/Pic*.jpg', allowEmptyArchive: true
+            archiveArtifacts artifacts: '**/Katalon/DemoScripts/**/Text File.txt', allowEmptyArchive: true
+            echo "UI Test Complete! Screenshots & logs attached."
+        }
+        success {
+            echo "UI TEST PASSED - Login/Logout Validated!"
+        }
+        failure {
+            echo "UI TEST FAILED - Check screenshots."
+        }
+    }
+}
