@@ -43,13 +43,13 @@
         <plugins>
                   <!-- SUREFIRE: REQUIRED TO RUN JUNIT 5 -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
-                <configuration>
-                    <useJUnitPlatform>true</useJUnitPlatform>
-                </configuration>
-            </plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-surefire-plugin</artifactId>
+                      <version>3.2.5</version>
+                      <configuration>
+                          <useJUnitPlatform>true</useJUnitPlatform>
+                      </configuration>
+                  </plugin>
                  
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
