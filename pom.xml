@@ -8,10 +8,11 @@
     <artifactId>SeleniumTest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
+         <properties>
+         <maven.compiler.source>17</maven.compiler.source>
+             <maven.compiler.target>17</maven.compiler.target>
+             <maven-surefire-plugin.useJUnitPlatform>true</maven-surefire-plugin.useJUnitPlatform>
+         </properties>     
 
     <dependencies>
         <dependency>
